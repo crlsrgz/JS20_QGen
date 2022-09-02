@@ -105,7 +105,8 @@ button:active {
   font-size: 1.35rem;
 }
 
-/* MEdia Query*/
+
+/* Media Queries*/
 
 @media screen and (max-width: 1000px) {
   .quote-container {

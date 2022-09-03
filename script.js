@@ -56,24 +56,21 @@ async function getQuotes() {
 
 getQuotes();
 
+/*<<<< LOAD FROM LOCAL FILE >>>>*/
 
-// Load from local file
 // function newQuote() {
   //   const quote = localQuotes[Math.floor(Math.random() * localQuotes.length)] 
   //   authorText.textContent = quote.author;
   //   quoteText.textContent = quote.text;
-// }
-
-// newQuote();
-
-
-//Tweet quote
+  // }
+  
+  // newQuote();
+  
+/*<<<< TWEET QUOTE >>>>*/
 function tweetQuote() {
   const twitterURl = `https://twitter.com/intent/tweet?text=${quote.textContent} - ${authorText.textContent}`;
-  window.open(twitterURl, '_blank');
-  
+  window.open(twitterURl, '_blank');  
 }
-
 newQuoteBtn.addEventListener("click",newQuote);
 twitterBtn.addEventListener("click",tweetQuote);
 
